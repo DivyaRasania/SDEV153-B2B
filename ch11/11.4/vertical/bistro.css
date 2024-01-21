@@ -1,0 +1,112 @@
+* { box-sizing: border-box; } 
+body { font-family: Verdana, Arial, sans-serif;
+       background-color: #EAEAEA;
+	   margin: 0;
+}
+#wrapper {  
+           color: #000066;
+		   background-color: #FFFFFF;
+
+} 
+header { font-family: Georgia, "Times New Roman", serif;
+        color: #00005D; 
+		background-color: #869dc7; 
+		background-image: url(lighthouselogo.jpg);
+		background-repeat: no-repeat;
+		margin-top: 0;
+		padding-bottom: 1em;
+		min-height: 120px;
+		height: auto;
+}
+header h1 { padding-left: 120px;
+          padding-top: 40px;
+		  margin: 0; 	  
+ }
+header span { font-style: italic;
+			  font-weight: bold;
+			  font-size: 95%;
+			  color: #FFFFFF;
+			  padding-left: 30%;
+}
+nav {  background-color: #00005D; 
+	   letter-spacing: 0.1em;
+	   font-weight: bold;
+	   text-align: right; 
+	   padding-right: 2em;
+	   position: relative; 
+} 
+nav ul { list-style-type: none; 
+        margin: 0;
+}
+
+nav li { padding: 0.5em;
+      display: inline-block;
+}
+nav a { text-decoration: none; 
+       display: block;
+}
+nav a:link { color: #FFFFFF; }
+nav a:visited { color: #EAEAEA; }
+nav a:hover {  color: #D3DBEB;}
+nav ul ul { position: absolute;
+         background-color: #5564A0;
+         padding: 0;
+        text-align: left;
+        display: none; }
+nav ul ul li { border: 1px solid #00005D;
+         display: block;
+         width: 8em;
+         padding-left: 1em;
+         margin-left: 0; }
+nav li:hover ul { display: block; }
+main { background-color: #ffffff;
+           color: #000000;
+		   padding: 10px 20px; 
+} 
+
+h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+	 margin: 5px;
+}
+
+
+footer {font-size:70%;
+         text-align: center;
+         padding: 10px;
+		 clear: both;
+}
+header, main, nav, footer, figure, figcaption { display: block; }
+@media (min-width: 600px) {
+   #wrapper { margin: auto; 
+             width: 80%; }
+   header span { padding-left: 25%; }
+ }		 
+ 
+@media (min-width: 1024px) {
+nav ul ul { position: absolute;
+         left: 130px;
+		 top: 80px;
+         background-color: #5564A0;
+    	 padding: 0;
+         display: none; 
+		 text-align: left;
+}
+
+nav ul ul { position: absolute;
+         background-color: #5564A0;
+         padding: 0;
+        text-align: left;
+        display: none;
+}
+header { grid-area: header; }
+nav { grid-area: nav; }
+main { grid-area: main;  }
+footer { grid-area: footer; }
+#wrapper { width: 100%; margin: 0;
+           display: grid;
+		   grid-template: 
+		       "nav header"
+			   "nav    main"
+			   "nav    footer"
+			   / 160px 1fr; }
+}

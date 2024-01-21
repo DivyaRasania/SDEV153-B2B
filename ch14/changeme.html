@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>jQuery Practice</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function()  {
+$('a').click(function(){
+	$('li:even').css('color','#00AA00');
+	});
+});
+</script>
+</head>
+<body>
+<h1>My Favorite Dogs</h1>
+<ul>
+  <li>Pekingnese</li>
+  <li>Schnauzer</li>
+  <li>Border Collie</li>
+</ul>
+<a href="#">Click Me</a>
+</body>
+</html>

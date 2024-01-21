@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lighthouse Bistro</title>
+<meta charset="utf-8">
+<style>
+@keyframes slideme {
+  from { margin-left: 100%;
+	     width: 300%;  }
+	50% { margin-left: 50%;
+         font-size: 250%; }	 
+    to {  font-size: 300%;
+         margin-left: 0%;
+	     width: 100%; }
+}
+
+* { box-sizing: border-box; margin: 0; }
+body {font-family:Verdana, Arial, sans-serif; }
+nav {  background-color: #B3C7E6; }
+nav ul { list-style-type: none; 
+         margin: 0;
+         padding: 0;
+}
+nav li { border-bottom: 1px solid #ffffff;
+}
+nav a { text-decoration: none; 
+        display: block;
+		padding: 1em 2em;
+}
+nav a:link { color: #FFFFFF; }
+nav a:visited { color: #F8F8F8; }
+nav a:hover {  color: #000066;
+               background-color: #eaeaea;
+}
+header { background-color: #869DC7;
+        color: #00005D; 
+		background-image: url(light.gif); 
+		background-repeat: no-repeat;
+		padding: 2em 0 2em 7em;
+        font-size: 120%;
+		
+}
+h2 { color: #869dc7; 
+     font-family: arial, sans-serif;
+}
+main { padding: 1em; }
+aside { padding: 1em; }
+figure {   margin: auto;
+           padding: 8px;
+		   width: 265px;
+		   background-color: #FFF;
+		   border: 1px solid #CCC;
+		   box-shadow: 5px 5px 5px #828282;
+}
+figcaption { text-align: center;
+		   font-size: .8em;
+		   font-style: italic;
+}
+footer { background-color: #869DC7;
+         font-size:70%;
+         text-align: center;
+         padding: 2em;
+		 clear: both;
+}
+#offer { background-color: #eaeaea;
+          width: 10em;
+		   margin: 2em auto 0 auto;
+		  text-align: center;
+}
+#offer a { text-decoration: none;
+            color: #FF0000;		  
+}
+header, main, nav, figure, footer { display: block; }
+@media only screen and (min-width: 768px) {
+	#content { display: flex; }   
+	nav      { flex: none; }
+	main     { flex: 6; 
+               min-width: 20em; 
+               background-color: #FFFFFF; }
+	aside    { flex: 4; 
+               background-color: #EAEAEA; }
+	header { padding-left: 10em;
+			 overflow: hidden;
+            height: 160px;	}
+	h1 { animation-duration: 5s;
+		 animation-name: slideme;
+		 animation-fill-mode: forwards; }
+}
+
+
+</style> 
+</head>
+<body>
+  <header>
+    <h1>Lighthouse Bistro</h1>
+  </header>
+  <div id="content">
+    <nav>
+	<ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rooms.html">Menu</a></li>
+      <li><a href="directions.html">Directions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+	 </ul>
+    </nav>
+  <main> 
+     <h2>Locally Roasted Free-Trade Coffee</h2>
+    <p>Indulge in the aroma of freshly ground roast coffee. Specialty drinks are available hot or cold.</p>
+    <h2>Specialty Pastries</h2>
+    <p>Enjoy a selection of our fresh-baked, organic pastries, including 
+  fresh-fruit muffins, scones, croissants, and cinnamon rolls.</p>
+  	<h2>Lunchtime is Anytime</h2>
+    <p>Savor delicious wraps and sandwiches on hearty, whole-grain breads with locally-grown salad, fruit, and vegetables. </p>
+    <h2>Panoramic View</h2>
+	<p>Take in some scenery! The top of our lighthouse offers a panoramic view of the countryside. Challenge your friends to climb our 100-stair tower.<br><br></p>
+    <div id="offer">
+    <a href="#">Special Offer</a>
+    </div>
+ </main>
+   <aside>
+       <figure>
+         <img src="lighthouse.jpg" width="250" height="355" id="floatright" alt="Lighthouse Island">
+         <figcaption>Cana Island Lighthouse</figcaption>
+	   </figure>
+   </aside>
+   </div>
+     <footer>Copyright &copy; 2020     </footer>
+</body>
+</html>
+
+

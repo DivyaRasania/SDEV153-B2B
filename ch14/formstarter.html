@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Newsletter Sign Up</title>
+  <meta charset="utf-8">
+<style>
+form  { min-width: 80em; }
+input { margin-bottom: 1em; }
+label { width: 6em;
+		padding-right: 1em;
+        text-align: right; }
+#submit { margin-left: 3em; }	
+</style>
+</head>
+<body>
+<h1>Newsletter Sign Up</h1>
+<form method="post" id="newsForm"
+      action="https://webdevbasics.net/scripts/demo.php">
+<div>
+<label for="userName">Name:</label>
+<input type="text" name="userName" id="userName" >
+</div>
+<div>
+<label for="userEmail">E-mail:</label>
+<input type="text" name="userEmail" id="userEmail" >
+</div>
+<input type="submit" value="Sign Up" id="submit">
+</form>
+</body>
+</html>
