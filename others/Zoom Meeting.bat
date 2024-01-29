@@ -1,1 +1,1 @@
-start brave https://app.zoom.us/wc/93316117547/join?fromPWA=1
+start brave https://app.zoom.us/wc/99351056741/join?fromPWA=1
