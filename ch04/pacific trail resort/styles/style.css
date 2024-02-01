@@ -1,17 +1,24 @@
 body {
-    background-color: #FFFFFF;
+    background-color: #90C7E3;
     color: #666666;
     font-family: Arial, Verdana, sans-serif;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
 }
 
 header {
     background-color: #002171;
     color: #FFFFFF;
     font-family: Georgia, sans-serif;
+    background-image: url("ch04/pacific trail resort/images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 72px;
 }
 
 h1 {
-    line-height: 200%;
+    text-align: center;
+    padding-top: .5em;
 }
 
 h2 {
@@ -19,9 +26,20 @@ h2 {
     font-family: Georgia, serif;
 }
 
+h3 {
+    font-family: Georgia, serif;
+}
+
 nav {
     font-weight: bold;
-    background-color: #BBDEFB;
+    text-align: center;
+    padding-top: .5em;
+    padding-right: .5em;
+    padding-bottom: .5em;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 dt {
@@ -38,10 +56,42 @@ footer {
     font-size: .70em;
     font-style: italic;
     text-align: center;
+    padding: 1em;
 }
 
 #wrapper {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    background-color: #FFFFFF;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 5px 5px 5px #1e1e1e;
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+}
+
+#homehero {
+    background-image: url("ch04/pacific trail resort/images/coast.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#yurthero {
+    background-image: url("ch04/pacific trail resort/images/yurt.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#trailhero {
+    background-image: url("ch04/pacific trail resort/images/trail.jpg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
 }
