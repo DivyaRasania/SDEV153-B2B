@@ -6,11 +6,21 @@ body {
     background-image: linear-gradient(to bottom, #FFFFFF, #90C7E3);
 }
 
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #FFFFFF;
+    min-width: 960px;
+    max-width: 2048px;
+    box-shadow: 5px 5px 5px #1e1e1e;
+}
+
 header {
     background-color: #002171;
     color: #FFFFFF;
     font-family: Georgia, sans-serif;
-    background-image: url("ch04/pacific trail resort/images/sunset.jpg");
+    background-image: url(../images/sunset.jpg);
     background-repeat: no-repeat;
     background-position: right;
     height: 72px;
@@ -19,15 +29,6 @@ header {
 h1 {
     text-align: center;
     padding-top: .5em;
-}
-
-h2 {
-    color: #1976D2;
-    font-family: Georgia, serif;
-}
-
-h3 {
-    font-family: Georgia, serif;
 }
 
 nav {
@@ -42,9 +43,45 @@ nav a {
     text-decoration: none;
 }
 
+#homehero {
+    background-image: url(../images/coast.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#yurthero {
+    background-image: url(../images/yurt.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#trailhero {
+    background-image: url(../images/trail.jpg);
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    display: block;
+}
+
+h2 {
+    color: #1976D2;
+    font-family: Georgia, serif;
+}
+
 dt {
     color: #002171;
     font-weight: bold;
+}
+
+h3 {
+    font-family: Georgia, serif;
 }
 
 .resort {
@@ -57,41 +94,4 @@ footer {
     font-style: italic;
     text-align: center;
     padding: 1em;
-}
-
-#wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    background-color: #FFFFFF;
-    min-width: 960px;
-    max-width: 2048px;
-    box-shadow: 5px 5px 5px #1e1e1e;
-}
-
-main {
-    padding-left: 2em;
-    padding-right: 2em;
-    display: block;
-}
-
-#homehero {
-    background-image: url("ch04/pacific trail resort/images/coast.jpg");
-    background-repeat: no-repeat;
-    height: 300px;
-    background-size: 100% 100%;
-}
-
-#yurthero {
-    background-image: url("ch04/pacific trail resort/images/yurt.jpg");
-    background-repeat: no-repeat;
-    height: 300px;
-    background-size: 100% 100%;
-}
-
-#trailhero {
-    background-image: url("ch04/pacific trail resort/images/trail.jpg");
-    background-repeat: no-repeat;
-    height: 300px;
-    background-size: 100% 100%;
 }
