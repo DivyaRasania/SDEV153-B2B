@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Trails Resort::Reservations</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script>
+        function validatePhone() {
+            var phoneNumber = document.getElementById("myPhone").value;
+            var phoneRegex = /^\d{3}-\d{3}-\d{4}$/;
+
+            // if phone number is empty
+            if (document.forms[0].myPhone.value == "") {
+                alert("Name field cannot be empty.");
+                return false;
+            }
+
+            // if phone number is not in xxx-xxx-xxxx format
+            if (!phoneRegex.test(phoneNumber)) {
+                alert("Please enter phone number in xxx-xxx-xxxx format only");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Pacific Trails Resort</a></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="yurts.html">Yurts</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+        <div id="reshero"></div>
+
+        <main>
+            <h2>Reservations at Pacific Trails</h2>
+
+            <h3>Contact Us</h3>
+
+            <p>Required fields are marked with an asterisk*</p>
+
+            <form method="post" action="https://webdevbasics.net/scripts/pacific.php" onsubmit="return validatePhone()">
+                <label for="myFName">*First Name:</label>
+                <input type="text" name="myFName" id="myFName" required />
+                <label for="myLName">*Last Name:</label>
+                <input type="text" name="myLName" id="myLName" required />
+                <label for="myEmail">*E-mail:</label>
+                <input type="text" name="myEmail" id="myEmail" required />
+                <label for="myAddress">Address:</label>
+                <input type="text" name="myAddress" id="myAddress" />
+                <label for="myCity">City:</label>
+                <input type="text" name="myCity" id="myCity" />
+                <label for="myState">State:</label>
+                <input type="text" name="myState" id="myState" minlength="2" maxlength="2" />
+                <label for="myZip">Zip Code:</label>
+                <input type="text" name="myZip" id="myZip" minlength="5" maxlength="10" />
+                <label for="myPhone">*Phone:</label>
+                <input type="text" name="myPhone" id="myPhone" />
+                <label for="myDate">Arrival Date</label>
+                <input type="date" name="myDate" id="myDate" />
+                <label for="myDeparture">Departure Date</label>
+                <input type="date" name="myDeparture" id="myDeparture" />
+                <label for="myNights">Nights</label>
+                <input type="number" name="myNights" id="myNights" min="1" max="14" />
+                <label for="myComments">*Comments:</label>
+                <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+                <input type="submit" value="Submit" />
+            </form>
+        </main>
+
+        <footer>
+            <small><i>Copyright &copy; 2020 Pacific Trail Resort</i></small> <br>
+            <a href="mailto:divya@rasania.com">divya@rasania.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>
