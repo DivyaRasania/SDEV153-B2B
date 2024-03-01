@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Trails Resort::Shop</title>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Pacific Trails Resort::Shop</h1>
+    </header>
+
+    <div id="wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="yurts.html">Yurts</a></li>
+                <li><a href="activities.html">Acitivities</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+
+        <div id="shophero"></div>
+
+        <main>
+            <h2>Shop at Pacific Trails</h2>
+
+            <div id="flow">
+                <section class="shop">
+                    <img src="./resources/images/trailguide.jpg" alt="Hiking Guide">
+
+                    <h3>Pacific Trails Hiking Guide</h3>
+
+                    <p>
+                        Guided hikes to the best trails around Pacific Trails Resort.
+                        Each hike includes a detailed route, distance, elevation change,
+                        and estimated time. 187 pages. Softcover. $19.95
+                    </p>
+
+                    <form method="post" action="https://ww10.aitsafe.com/cf/add.cfm">
+                        <INPUT TYPE="HIDDEN" NAME="userid" VALUE="C2380786">
+                        <INPUT TYPE="HIDDEN" NAME="product" VALUE="Guided hikes">
+                        <INPUT TYPE="HIDDEN" NAME="price" VALUE="19.95"> <b>$19.95</b>
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </section>
+
+                <section class="shop">
+                    <img src="./resources/images/yurtyoga.jpg" alt="Yurt Yoga">
+
+                    <h3>Yurt Yoga</h3>
+
+                    <p>
+                        Enjoy the restorative poses of yurt yoga in the comfort of your own home.
+                        Each pose is illustrated with several photographs, an explanation,
+                        and a description of the restorative benefits. 206 pages. Softcover. $24.95
+                    </p>
+
+                    <form method="post" action="https://ww10.aitsafe.com/cf/add.cfm">
+                        <INPUT TYPE="HIDDEN" NAME="userid" VALUE="C2380786">
+                        <INPUT TYPE="HIDDEN" NAME="product" VALUE="yurt yoga">
+                        <INPUT TYPE="HIDDEN" NAME="price" VALUE="24.95"> <b>$24.95</b>
+                        <input type="submit" value="Add to Cart">
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <small><i>Copyright &copy; 2020 Pacific Trail Resort</i></small> <br>
+            <a href="mailto:divya@rasania.com">divya@rasania.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>
