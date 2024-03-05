@@ -1,0 +1,4 @@
+navigation: https://www.youtube.com/watch?v=xaB_jg3jDVY
+calculator: https://www.youtube.com/watch?v=I5kj-YsmWjM
+counter: https://www.youtube.com/watch?v=dKOT5LcouzQ
+tip calculator: https://www.youtube.com/watch?v=I4tNOpNIU5Q
