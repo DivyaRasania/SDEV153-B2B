@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="icon" type="image/png" href="./images/favicons/todo.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input class="nav-input" type="checkbox" id="circleMenu">
+            <label class="nav-label" for="circleMenu"><i class="fas fa-bars"></i></label>
+
+            <div class="menu-container">
+                <div class="menu">
+                    <a href="./index.html">Home</a>
+                    <a href="./calculator.html">Calculator</a>
+                    <a href="./counter.html">Counter</a>
+                    <a href="./hex-color-picker.html">Hex Color Picker</a>
+                    <a href="./riddles.html">Riddles</a>
+                    <a href="./tip-calculator.html">Tip Calculator</a>
+                    <a href="./todo.html">Todo</a>
+                    <a href="./tutorials.html">Tutorials</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="todo-container">
+            <h1 class="title">Todo</h1>
+            <h2 class="description"><span id="date"></span></h2>
+
+            <div class="todo-input">
+                <input type="text" class="items-input" placeholder="I need to..." autocomplete="off"><button
+                    id="enter">Enter</button>
+            </div>
+
+            <div class="todo-list"></div>
+        </div>
+    </main>
+
+    <footer>
+        <script>
+            document.querySelector('footer').innerHTML = `&copy; ${new Date().getFullYear()}  ToolBox Verse`;
+        </script>
+
+        <script src="./script.js"></script>
+    </footer>
+</body>
+
+</html>

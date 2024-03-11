@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="./images/favicons/calculator.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input class="nav-input" type="checkbox" id="circleMenu">
+            <label class="nav-label" for="circleMenu"><i class="fas fa-bars"></i></label>
+
+            <div class="menu-container">
+                <div class="menu">
+                    <a href="./index.html">Home</a>
+                    <a href="./calculator.html">Calculator</a>
+                    <a href="./counter.html">Counter</a>
+                    <a href="./hex-color-picker.html">Hex Color Picker</a>
+                    <a href="./riddles.html">Riddles</a>
+                    <a href="./tip-calculator.html">Tip Calculator</a>
+                    <a href="./todo.html">Todo</a>
+                    <a href="./tutorials.html">Tutorials</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calculator-container">
+            <div class="calculator">
+                <input class="display" type="text" readonly>
+                <div class="keys">
+                    <button class="custom-button" onclick="appendToDisplay('7')">7</button>
+                    <button class="custom-button" onclick="appendToDisplay('8')">8</button>
+                    <button class="custom-button" onclick="appendToDisplay('9')">9</button>
+                    <button class="custom-button operators" onclick="appendToDisplay('+')">+</button>
+
+                    <button class="custom-button" onclick="appendToDisplay('4')">4</button>
+                    <button class="custom-button" onclick="appendToDisplay('5')">5</button>
+                    <button class="custom-button" onclick="appendToDisplay('6')">6</button>
+                    <button class="custom-button operators" onclick="appendToDisplay('-')">-</button>
+
+                    <button class="custom-button" onclick="appendToDisplay('1')">1</button>
+                    <button class="custom-button" onclick="appendToDisplay('2')">2</button>
+                    <button class="custom-button" onclick="appendToDisplay('3')">3</button>
+                    <button class="custom-button operators" onclick="appendToDisplay('*')">*</button>
+
+                    <button class="custom-button" onclick="appendToDisplay('0')">0</button>
+                    <button class="custom-button" onclick="appendToDisplay('.')">.</button>
+                    <button class="custom-button" onclick="calculate()">=</button>
+                    <button class="custom-button operators" onclick="appendToDisplay('/')">/</button>
+
+                    <button class="custom-button operators" onclick="clearDisplay()">C</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <script>
+            document.querySelector('footer').innerHTML = `&copy; ${new Date().getFullYear()}  ToolBox Verse`;
+        </script>
+
+        <script src="./script.js"></script>
+    </footer>
+</body>
+
+</html>

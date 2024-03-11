@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials</title>
+    <link rel="icon" type="image/png" href="./images/favicons/tutorials.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input class="nav-input" type="checkbox" id="circleMenu">
+            <label class="nav-label" for="circleMenu"><i class="fas fa-bars"></i></label>
+
+            <div class="menu-container">
+                <div class="menu">
+                    <a href="./index.html">Home</a>
+                    <a href="./calculator.html">Calculator</a>
+                    <a href="./counter.html">Counter</a>
+                    <a href="./hex-color-picker.html">Hex Color Picker</a>
+                    <a href="./riddles.html">Riddles</a>
+                    <a href="./tip-calculator.html">Tip Calculator</a>
+                    <a href="./todo.html">Todo</a>
+                    <a href="./tutorials.html">Tutorials</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title">Tutorials</h1>
+        <h2 class="description">Tutorials I used to create all tools available on this website.</h2>
+
+        <div class="tutorials-container">
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=v_8CmC6cwUs" target="_blank">
+                            <img src="./images/thumbnails/custom-scrollbar.jpg"
+                                alt="Custom scrollbar tutorial thumbnail" width="450px" height="250px">
+                        </a>
+                        <p class="image-description">Custom Scrollbar</p>
+                    </td>
+
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=xaB_jg3jDVY" target="_blank">
+                            <img src="./images/thumbnails/nav.jpg" alt="Fullscreen navigation tutorial thumbnail"
+                                width="450px" height="250px">
+                        </a>
+                        <p class="image-description">Fullscreen Navigation</p>
+                    </td>
+
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=I5kj-YsmWjM" target="_blank">
+                            <img src="./images/thumbnails/calc.jpg" alt="Calculator tutorial thumbnail" width="450px"
+                                height="250px">
+                        </a>
+                        <p class="image-description">Calculator</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=dKOT5LcouzQ" target="_blank">
+                            <img src="./images/thumbnails/counter.jpg" alt="Counter tutorial thumbnail" width="450px"
+                                height="250px">
+                        </a>
+                        <p class="image-description">Counter</p>
+                    </td>
+
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=4nCH8EA55js" target="_blank">
+                            <img src="./images/thumbnails/hex.jpg" alt="Hex color picker tutorial thumbnail"
+                                width="450px" height="250px">
+                        </a>
+                        <p class="image-description">Hex Color Picker</p>
+                    </td>
+
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=CXfbXnn1qYI" target="_blank">
+                            <img src="./images/thumbnails/riddles.jpg" alt="Riddles tutorial thumbnail" width="450px"
+                                height="250px">
+                        </a>
+                        <p class="image-description">Riddles (I used this as inspiration)</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=I4tNOpNIU5Q" target="_blank">
+                            <img src="./images/thumbnails/tip-calc.jpg" alt="Tip calculator tutorial thumbnail"
+                                width="450px" height="250px">
+                        </a>
+                        <p class="image-description">Tip Calculator</p>
+                    </td>
+
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=H5tuwAO-_Kg" target="_blank">
+                            <img src="./images/thumbnails/todo.jpg" alt="Todo tutorial thumbnail" width="450px"
+                                height="250px">
+                        </a>
+                        <p class="image-description">Todo</p>
+                    </td>
+
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=gWgzzVVcqfA" target="_blank">
+                            <img src="./images/thumbnails/contact-form.jpg" alt="Contact form tutorial thumbnail"
+                                width="450px" height="250px">
+                        </a>
+                        <p class="image-description">Contact Form</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <script>
+            document.querySelector('footer').innerHTML = `&copy; ${new Date().getFullYear()}  ToolBox Verse`;
+        </script>
+
+        <script src="./script.js"></script>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddles</title>
+    <link rel="icon" type="image/png" href="./images/favicons/riddles.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input class="nav-input" type="checkbox" id="circleMenu">
+            <label class="nav-label" for="circleMenu"><i class="fas fa-bars"></i></label>
+
+            <div class="menu-container">
+                <div class="menu">
+                    <a href="./index.html">Home</a>
+                    <a href="./calculator.html">Calculator</a>
+                    <a href="./counter.html">Counter</a>
+                    <a href="./hex-color-picker.html">Hex Color Picker</a>
+                    <a href="./riddles.html">Riddles</a>
+                    <a href="./tip-calculator.html">Tip Calculator</a>
+                    <a href="./todo.html">Todo</a>
+                    <a href="./tutorials.html">Tutorials</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="riddles-container">
+            <h1 class="title">Riddles</h1>
+
+            <h2 class="description">Click the "Generate" to get started</h2>
+
+            <p class="riddle-title" id="riddle-title"><u>Title</u>:&nbsp;</p>
+            <p class="riddle-question" id="riddle-question"><u>Question</u>:&nbsp;</p>
+
+            <div>
+                <button class="custom-button" type="button"
+                    onclick="document.querySelector('#riddle-answer').style.display = 'block'">Show Answer</button>
+                <button class=" custom-button" type="button" onclick="location.reload()">New Riddle</button>
+            </div>
+
+            <p class="riddle-answer" id="riddle-answer" style="display: none;"><u>Answer</u>:&nbsp;</p>
+        </div>
+    </main>
+
+    <footer>
+        <script>
+            document.querySelector('footer').innerHTML = `&copy; ${new Date().getFullYear()}  ToolBox Verse`;
+        </script>
+
+        <script src="./script.js"></script>
+    </footer>
+</body>
+
+</html>

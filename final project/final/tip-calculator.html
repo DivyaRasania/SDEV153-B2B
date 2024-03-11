@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="icon" type="image/png" href="./images/favicons/tip.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input class="nav-input" type="checkbox" id="circleMenu">
+            <label class="nav-label" for="circleMenu"><i class="fas fa-bars"></i></label>
+
+            <div class="menu-container">
+                <div class="menu">
+                    <a href="./index.html">Home</a>
+                    <a href="./calculator.html">Calculator</a>
+                    <a href="./counter.html">Counter</a>
+                    <a href="./hex-color-picker.html">Hex Color Picker</a>
+                    <a href="./riddles.html">Riddles</a>
+                    <a href="./tip-calculator.html">Tip Calculator</a>
+                    <a href="./todo.html">Todo</a>
+                    <a href="./tutorials.html">Tutorials</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tip-container">
+            <div class="tip-calculator">
+                <h1 style="text-align: center; 
+                           font-weight: bold;">Tip Calculator</h1>
+
+                <p style="margin-top: 10px; margin-bottom: 10px;
+                          border-bottom: 2px solid rgb(80, 80, 80);"></p>
+
+                <label for="amount" style="font-size: 1.1em;">Bill Amount</label>
+                <br>
+                <button class="button-icons">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </button><input id="amount" type="number" style="margin-bottom: 10px;">
+
+                <label for="guest" style="font-size: 1.1em;">Number of Guests</label>
+                <br>
+                <button class="button-icons">
+                    <i class="fa-solid fa-person"></i>
+                </button><input id="guest" type="text" style="margin-bottom: 10px;">
+
+                <label for="quality" style="font-size: 1.1em;">Service Quality</label>
+                <select id="quality" style="margin-bottom: 10px;">
+                    <option disabled selected value="0">Choose...</option>
+                    <option value="0.20">20% - Outstanding</option>
+                    <option value="0.15">15% - Good</option>
+                    <option value="0.1">10% - It was ok</option>
+                    <option value="0.05">5% - Bad</option>
+                    <option value="0.00">0% - Terrible</option>
+                </select>
+
+                <div style="text-align: center;">
+                    <p style="border-top: 2px solid rgb(80, 80, 80);"></p>
+
+                    <button class="custom-button" onclick="calculateTip()"
+                        style="border-radius: 5px; width: fit-content;">Calculate</button>
+                </div>
+                <div class="tip-amount"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <script>
+            document.querySelector('footer').innerHTML = `&copy; ${new Date().getFullYear()}  ToolBox Verse`;
+        </script>
+
+        <script src="./script.js"></script>
+    </footer>
+</body>
+
+</html>
